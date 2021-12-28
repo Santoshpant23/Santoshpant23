@@ -169,13 +169,14 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("images/banner.jpg") no-repeat center;
+  background: rgba(0, 0, 0, 0.8) url(images/banner-1.png);
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
+  background-blend-mode: darken;
 }
 .home .max-width {
   width: 100%;
@@ -225,10 +226,15 @@ section .title::after {
   width: 45%;
 }
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  height: 410px;
+  width: 350px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.about .about-content .left img:hover {
+  transform: scale(1.1);
 }
 .about .about-content .right {
   width: 55%;
@@ -256,56 +262,81 @@ section .title::after {
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
   color: crimson;
   background: none;
 }
 
 /* services section styling */
+
+.services .gallery {
+  text-align: center;
+}
 .services,
 .teams {
   color: #fff;
   background: #111;
 }
-.services .title::before,
-.teams .title::before {
-  background: #fff;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: 100px 100px; */
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  margin: 20px;
+  padding: 20px;
 }
-.services .title::after,
-.teams .title::after {
-  background: #111;
-  content: "what i provide";
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-.services .serv-content .card {
-  width: calc(33% - 20px);
-  background: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 50px 25px;
+
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.5s ease-in-out;
 }
-.services .serv-content .card:hover {
-  background: crimson;
+.gallery-item:hover .image img {
+  transform: scale(1.3);
 }
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .w-1,
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6 {
+    grid-column: span 1;
+  }
 }
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
-}
-.services .serv-content .card i {
-  font-size: 50px;
-  color: crimson;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i {
-  color: #fff;
-}
-.services .serv-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
+
+@keyframes move-down {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 35%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 /* skills section styling */
@@ -384,9 +415,7 @@ section .title::after {
 }
 
 /* teams section styling */
-.teams .title::after {
-  content: "who with me";
-}
+
 .teams .carousel .card {
   background: #222;
   border-radius: 6px;
@@ -394,56 +423,6 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
-}
-.teams .carousel .card:hover {
-  background: crimson;
-}
-.teams .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box {
-  transform: scale(1.05);
-}
-.teams .carousel .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-.teams .carousel .card img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid crimson;
-  transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img {
-  border-color: #fff;
-}
-.owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid crimson !important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover {
-  background: crimson !important;
 }
 
 /* contact section styling */
@@ -559,8 +538,12 @@ footer span a:hover {
 /* responsive media query start */
 @media (max-width: 1104px) {
   .about .about-content .left img {
-    height: 350px;
+    /* height: 350px; */
     width: 350px;
+  }
+  .home {
+    background: rgba(0, 0, 0, 0.8) url(images/profile-1.png);
+    background-size: cover;
   }
 }
 
@@ -680,6 +663,9 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+  .myimg1 {
+    width: 250px;
   }
 }
 
