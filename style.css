@@ -40,6 +40,7 @@ section {
 .skills,
 .teams,
 .contact,
+.teams2,
 footer {
   font-family: "Poppins", sans-serif;
 }
@@ -416,13 +417,39 @@ section .title::after {
 
 /* teams section styling */
 
-.teams .carousel .card {
+.teams {
   background: #222;
-  border-radius: 6px;
-  padding: 25px 35px;
+  /* border-radius: 6px; */
+  /* padding: 25px 35px; */
+  padding: 40px 10px;
+
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  font-size: 30px;
+}
+.lines {
+  color: red;
+  animation: lines 2s linear infinite alternate;
+  font-size: 40px;
+}
+.teams2 {
+  background: rgb(243, 233, 98);
+  /* border-radius: 6px; */
+  padding: 40px 10px;
+  text-align: center;
+  overflow: hidden;
+  /* transition: all 0.3s ease; */
+  font-size: 30px;
+  /* color: black; */
+}
+@keyframes lines {
+  from {
+    color: rgb(245, 8, 8);
+  }
+  to {
+    color: rgb(21, 42, 233);
+  }
 }
 
 /* contact section styling */
@@ -666,6 +693,9 @@ footer span a:hover {
   }
   .myimg1 {
     width: 250px;
+  }
+  .text {
+    display: inline;
   }
 }
 
