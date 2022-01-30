@@ -7,7 +7,7 @@
 - 👯 I’m looking to collaborate on Facebook
 - 🤔 I’m looking for help with App development
 - 💬 Ask me about HTML,CSS 
-- 📫 How to reach me: [@Twitter](https://twitter.com/iamsantoshpant) , [@Facebook](https://www.facebook.com/santosh.pant.35175) , [@LinkedIn](https://www.linkedin.com/in/santosh-pant-643213183/) ,  [@Instagram](https://www.instagram.com/santosh_pant23/)
+- 📫 How to reach me: [@Twitter](https://twitter.com/iamsantoshpant) , [@Facebook](https://www.facebook.com/santosh.pant.23/) , [@LinkedIn](https://www.linkedin.com/in/santosh-pant-643213183/) ,  [@Instagram](https://www.instagram.com/santosh_pant23/)
 - 😄 Pronouns: He/His
 - ⚡ Fun fact: I watch movies a lot.
 
