@@ -15,7 +15,7 @@ async function validate() {
 
         body.innerHTML = `
             <div class="img">
-            <img class="imgg"  src="results.png" alt=""   />
+            <img class="imgg"  src="/project/results.png" alt=""   />
             </div>
             `;
 
