@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
       body {
@@ -48,6 +49,7 @@
         /* justify-content: center; */
         flex-direction: column;
         height: 100%;
+        padding: 5px 20px;
         /* width: 100vw; */
       }
       form {
@@ -55,7 +57,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
       }
       input {
         padding: 13px 20px;
@@ -83,6 +85,7 @@
         margin-top: 70px;
         margin-bottom: 20px;
         color: rgb(7, 255, 7);
+        text-align: center;
       }
       footer {
         background: #111;
@@ -97,14 +100,38 @@
       footer span a:hover {
         text-decoration: underline;
       }
+      li a:hover {
+        color: rgb(129, 124, 124);
+      }
+      .img {
+        /* max-width: 70%; */
+        height: 100vh;
+        width: 100vw;
+        /* height: auto; */
+        /* padding: 50px 50px; */
+        background-color: rgb(41, 38, 38);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .imgg {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+      }
+      @media (max-width: 335px) {
+        li a {
+          font-size: 15px;
+        }
+      }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <ul>
-        <li><a href="/"> Home </a></li>
-        <li><a href="/project/about.html"> About </a></li>
-        <li><a href="/project/contact.html"> Contact </a></li>
+        <li><a href=""> Home </a></li>
+        <li><a href="/about.html"> About </a></li>
+        <li><a href="/contact.html"> Contact </a></li>
       </ul>
     </nav>
     <div class="main">
@@ -112,7 +139,7 @@
      -->
       <div class="data">
         <h1 class="heading">Check Your Results</h1>
-        <form action="" method="post">
+        <form action="#" method="get" name="myform" onSubmit="validate()">
           <input
             type="number"
             name="symbol"
@@ -120,7 +147,7 @@
             placeholder="Enter UR Symbol No"
           />
           <input type="date" name="dob" id="dob" placeholder="Enter UR DOB" />
-          <button class="submit">Submit</button>
+          <button class="submit">View Result</button>
         </form>
       </div>
     </div>
@@ -130,5 +157,7 @@
         <span class="far fa-copyright"></span> 2022 All rights reserved.</span
       >
     </footer>
+    <!-- <img src="results.png" alt=""/> -->
+    <script src="script.js"></script>
   </body>
 </html>
