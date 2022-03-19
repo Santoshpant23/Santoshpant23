@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <title>About</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
       body {
@@ -38,51 +38,9 @@
         font-size: 20px;
       }
       .main {
-        height: 100%;
-        /* width: 100%; */
-        background: rgba(0, 0, 0, 0.5);
-      }
-      .data {
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        flex-direction: column;
-        height: 100%;
-        /* width: 100vw; */
-      }
-      form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 80%;
-      }
-      input {
-        padding: 13px 20px;
-        /* width: 80%; */
-        margin: 15px;
-        border: 2px solid black;
-        border-radius: 20px;
-        width: 80%;
-      }
-      .submit {
-        padding: 10px 20px;
-        margin: 15px;
-        width: 80%;
-        border: 2px solid black;
-        border-radius: 20px;
-        font-size: 20px;
-      }
-      .submit:hover {
-        background-color: green;
-        color: white;
-        border: 2px solid red;
-        cursor: pointer;
-      }
-      .heading {
-        margin-top: 70px;
-        margin-bottom: 20px;
-        color: rgb(7, 255, 7);
+        height: 72%;
+        padding: 30px 50px;
+        font-family: "Ubuntu", sans-serif;
       }
       footer {
         background: #111;
@@ -102,27 +60,22 @@
   <body>
     <nav class="navbar">
       <ul>
-        <li><a href=""> Home </a></li>
+        <li><a href="/"> Home </a></li>
         <li><a href="/about.html"> About </a></li>
         <li><a href="/contact.html"> Contact </a></li>
       </ul>
     </nav>
     <div class="main">
-      <!-- <h1>This is where you will see your results</h1>
-     -->
-      <div class="data">
-        <h1 class="heading">Check Your Results</h1>
-        <form action="" method="post">
-          <input
-            type="number"
-            name="symbol"
-            id="symbol"
-            placeholder="Enter UR Symbol No"
-          />
-          <input type="date" name="dob" id="dob" placeholder="Enter UR DOB" />
-          <button class="submit">Submit</button>
-        </form>
-      </div>
+      <h1 class="heading">About the developer</h1>
+      <p class="para">
+        Santosh Pant made this web-App as a part of class 12 final project work
+        given by <span>Mr. Ganesh Chataut (Computer Department)</span> . <br />
+        This website is just a demo of real project which runs only on localhost
+        so all the marks that are shown here are just random marks.
+        <br /><br />
+        If anyone is reading this from my class then <span>Hi!</span> and
+        <span>Best of Luck For Final Exam</span>
+      </p>
     </div>
     <footer>
       <span

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <title>About</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        /* width: 100vw; */
+        font-family: "Poppins", sans-serif;
+      }
+      .navbar {
+        background-color: rgb(90, 85, 85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: sticky; */
+      }
+      .navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      li {
+        margin: 3px 5px;
+        padding: 5px 10px;
+        list-style: none;
+      }
+      li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .container {
+        /* max-width: 80%; */
+        padding: 30px;
+        background-color: rgb(195, 148, 240);
+        margin: auto;
+      }
+      .container h2 {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(241, 13, 13);
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif;
+      }
+      p {
+        text-align: center;
+
+        color: rgb(241, 13, 13);
+        font-weight: bold;
+        font-family: "Pushster", cursive;
+      }
+      .subMsg {
+        font-size: 25px;
+        color: green;
+      }
+      input,
+      textarea {
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        outline: none;
+        font-size: 18px;
+        display: block;
+      }
+      .btn {
+        width: 80%;
+        background-color: green;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 10px;
+        display: block;
+        margin: 12px auto;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid black;
+      }
+      .btn:hover {
+        color: white;
+        background-color: rgb(235, 93, 93);
+      }
+      .tag {
+        text-align: center;
+      }
+      footer {
+        background: #111;
+        padding: 15px 23px;
+        color: #fff;
+        text-align: center;
+      }
+      footer span a {
+        color: crimson;
+        text-decoration: none;
+      }
+      footer span a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/"> Home </a></li>
+        <li><a href="/about.html"> About </a></li>
+        <li><a href="/contact.html"> Contact </a></li>
+      </ul>
+    </nav>
+    <form action="" method="get">
+      <h1 class="tag">
+        If you are have any problem then feel free to Contact Us
+      </h1>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+      />
+      <input
+        type="phone"
+        name="phone"
+        id="phone"
+        placeholder="Enter your phone number"
+      />
+      <textarea
+        name="desc"
+        id="desc"
+        cols="30"
+        rows="10"
+        placeholder="Explain Your Concern"
+      ></textarea>
+      <button class="btn">Submit</button>
+      <!-- <button class="btn">Reset</button> -->
+    </form>
+    <footer>
+      <span
+        >Created By <a href="https://www.santoshpant.com.np">Santoshpant</a> |
+        <span class="far fa-copyright"></span> 2022 All rights reserved.</span
+      >
+    </footer>
+  </body>
+</html>
