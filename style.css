@@ -170,7 +170,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: rgba(0, 0, 0, 0.8) url(images/banner-1.png);
+  background: rgba(0, 0, 0, 0.7) url(images/canva2.png);
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -227,8 +227,8 @@ section .title::after {
   width: 45%;
 }
 .about .about-content .left img {
-  height: 410px;
-  width: 350px;
+  height: 470px;
+  width: 370px;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
@@ -569,7 +569,7 @@ footer span a:hover {
     width: 350px;
   }
   .home {
-    background: rgba(0, 0, 0, 0.8) url(images/profile-1.png);
+    background: rgba(0, 0, 0, 0.8) url(images/quiz.jpg.png);
     background-size: cover;
   }
 }
