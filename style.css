@@ -569,7 +569,7 @@ footer span a:hover {
     width: 350px;
   }
   .home {
-    background: rgba(0, 0, 0, 0.8) url(images/quiz.jpg.png);
+    background: rgba(0, 0, 0, 0.8) url(images/quiz.jpg);
     background-size: cover;
   }
 }
