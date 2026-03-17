@@ -47,7 +47,7 @@
 
 <p align="left">
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=santoshpant23&show_icons=true&theme=radical&include_all_commits=true&count_private=true" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=santoshpant23&layout=compact&theme=radical&hide=jupyter%20notebook,html,css,cython&langs_count=6" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=santoshpant23&layout=compact&theme=radical&hide=jupyter%20notebook,html,css,cython&langs_count=6&exclude_repo=vigilant-ai,pyscope,astroplan" />
 </p>
 
 ---
